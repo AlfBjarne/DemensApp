@@ -30,6 +30,7 @@ struct iPadHomeView: View {
         _agoraManager = StateObject(wrappedValue: AgoraVideoCallManager(videoManager: tempVideoManager, callViewModel: tempCallViewModel))
     }
     
+
     // MARK: - Outgoing Call View
     private var outgoingCallView: some View {
         VStack {
