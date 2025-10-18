@@ -30,7 +30,7 @@ class AgoraVideoCallManager: NSObject, ObservableObject {
     
     // MARK: - Configuration
     private let appID = "aab8b8f5a8cd4469a63042fcfafe7063" // Demo App ID
-    private let tempToken = "007eJxTYIj7IV6+d9WBSvc3S9rZVnFMilh9dEZiIWfI+wVrFV8prPqvwGCZlGqabJlsYJJoaGmSZm5kkWhpaWqenJyaZpGYbJSUnDJtYUZDICPD+gWdzIwMEAjiczKUpBaXxBsaG1gwMAAAfPci5w==" // Dagens token
+    private let tempToken = "007eJxTYHDQ3NnnOWkmk+zKOSqHVfakuc4Tk8t7c9SxIsPiuoRMZ7sCg2VSqmmyZbKBSaKhpUmauZFFoqWlqXlycmqaRWKyUVKyZcfnjIZARoYvGbdYGRkgEMTnZChJLS6JNzQ2sGBgAABfix/0" // Dagens token
     
     // MARK: - Initialization
     init(videoManager: VideoManager, callViewModel: CallViewModel) {
