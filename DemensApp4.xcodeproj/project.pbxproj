@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		750994DD2E3EBCFD00A721DC /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750994DC2E3EBCFD00A721DC /* CallKit.framework */; };
+		750994DF2E3EBD0900A721DC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750994DE2E3EBD0900A721DC /* AVFoundation.framework */; };
+		750994E12E3EBD1700A721DC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750994E02E3EBD1700A721DC /* UserNotifications.framework */; };
+		750994E32E3EBDC500A721DC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994E22E3EBDC500A721DC /* Contact.swift */; };
+		750994E72E3EC0BE00A721DC /* CallSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994E62E3EC0BE00A721DC /* CallSession.swift */; };
+		750994E92E3EC0E900A721DC /* CallKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994E82E3EC0E900A721DC /* CallKitManager.swift */; };
+		750994F12E3F354D00A721DC /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750994F02E3F354D00A721DC /* Speech.framework */; };
+		750994F32E3F35CD00A721DC /* SpeechRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994F22E3F35CD00A721DC /* SpeechRecognitionManager.swift */; };
+		750994F52E3F414D00A721DC /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994F42E3F414D00A721DC /* VideoManager.swift */; };
+		750994F72E3F4BB700A721DC /* IncomingCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994F62E3F4BB700A721DC /* IncomingCallView.swift */; };
+		750994FB2E3F76F000A721DC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750994FA2E3F76F000A721DC /* SettingsView.swift */; };
+		752FDD212E52629600E35775 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752FDD202E52629600E35775 /* CloudKitManager.swift */; };
+		752FDD232E5262C000E35775 /* SyncStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752FDD222E5262C000E35775 /* SyncStatusView.swift */; };
+		757A9F142E3FAE4C00E207CE /* CallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A9F132E3FAE4C00E207CE /* CallViewModel.swift */; };
+		75BB797C2E40CC1900F8AB71 /* AgoraVideoCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB797B2E40CC1900F8AB71 /* AgoraVideoCallManager.swift */; };
+		75BB797E2E40CC9200F8AB71 /* IntegratedCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB797D2E40CC9200F8AB71 /* IntegratedCallView.swift */; };
+		75BB79812E411EC000F8AB71 /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79802E411EC000F8AB71 /* AIAEC */; };
+		75BB79832E411EC000F8AB71 /* AIAECLL in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79822E411EC000F8AB71 /* AIAECLL */; };
+		75BB79852E411EC000F8AB71 /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79842E411EC000F8AB71 /* AINS */; };
+		75BB79872E411EC000F8AB71 /* AINSLL in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79862E411EC000F8AB71 /* AINSLL */; };
+		75BB79892E411EC000F8AB71 /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79882E411EC000F8AB71 /* AudioBeauty */; };
+		75BB798B2E411EC000F8AB71 /* ClearVision in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB798A2E411EC000F8AB71 /* ClearVision */; };
+		75BB798D2E411EC000F8AB71 /* ContentInspect in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB798C2E411EC000F8AB71 /* ContentInspect */; };
+		75BB798F2E411EC000F8AB71 /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB798E2E411EC000F8AB71 /* FaceCapture */; };
+		75BB79912E411EC000F8AB71 /* FaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79902E411EC000F8AB71 /* FaceDetection */; };
+		75BB79932E411EC000F8AB71 /* LipSync in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79922E411EC000F8AB71 /* LipSync */; };
+		75BB79952E411EC000F8AB71 /* ReplayKit in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79942E411EC000F8AB71 /* ReplayKit */; };
+		75BB79972E411EC000F8AB71 /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79962E411EC000F8AB71 /* RtcBasic */; };
+		75BB79992E411EC000F8AB71 /* SpatialAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79982E411EC000F8AB71 /* SpatialAudio */; };
+		75BB799B2E411EC000F8AB71 /* VQA in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB799A2E411EC000F8AB71 /* VQA */; };
+		75BB799D2E411EC000F8AB71 /* VideoAv1CodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB799C2E411EC000F8AB71 /* VideoAv1CodecDec */; };
+		75BB799F2E411EC000F8AB71 /* VideoAv1CodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB799E2E411EC000F8AB71 /* VideoAv1CodecEnc */; };
+		75BB79A12E411EC000F8AB71 /* VideoCodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79A02E411EC000F8AB71 /* VideoCodecDec */; };
+		75BB79A32E411EC000F8AB71 /* VideoCodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79A22E411EC000F8AB71 /* VideoCodecEnc */; };
+		75BB79A52E411EC000F8AB71 /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = 75BB79A42E411EC000F8AB71 /* VirtualBackground */; };
+		75BB79AB2E426A6700F8AB71 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB79AA2E426A6700F8AB71 /* AddContactView.swift */; };
+		75BB79AD2E426BEA00F8AB71 /* VideoRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB79AC2E426BEA00F8AB71 /* VideoRecordingView.swift */; };
+		75BB79AF2E448ED000F8AB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB79AE2E448ED000F8AB71 /* AppDelegate.swift */; };
+		75BB79B32E44A6A200F8AB71 /* VideoCallSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB79B22E44A6A200F8AB71 /* VideoCallSimulator.swift */; };
+		75BB79B52E44AAFD00F8AB71 /* IncomingVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB79B42E44AAFD00F8AB71 /* IncomingVideoCallView.swift */; };
+		75BB79B72E47F52400F8AB71 /* DebugConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB79B62E47F52400F8AB71 /* DebugConsoleView.swift */; };
+		75C237072E4BAD8A00BECD21 /* iPadHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C237062E4BAD8A00BECD21 /* iPadHomeView.swift */; };
+		75C237092E4BB1EA00BECD21 /* PhoneInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C237082E4BB1EA00BECD21 /* PhoneInterfaceView.swift */; };
+		75C237192E4F071700BECD21 /* RealVideoRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C237182E4F071700BECD21 /* RealVideoRecordingManager.swift */; };
+		75C2371B2E4F073F00BECD21 /* ContactsImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2371A2E4F073F00BECD21 /* ContactsImportManager.swift */; };
+		75C2371D2E4F1F6500BECD21 /* RealCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2371C2E4F1F6500BECD21 /* RealCameraManager.swift */; };
+		75C237222E50B33B00BECD21 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C237212E50B33B00BECD21 /* ContactManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		750994BF2E3EBCD800A721DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 750994A92E3EBCD600A721DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750994B02E3EBCD600A721DC;
+			remoteInfo = DemensApp4;
+		};
+		750994C92E3EBCD800A721DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 750994A92E3EBCD600A721DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750994B02E3EBCD600A721DC;
+			remoteInfo = DemensApp4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		750994B12E3EBCD600A721DC /* DemensApp4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemensApp4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		750994BE2E3EBCD800A721DC /* DemensApp4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemensApp4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750994C82E3EBCD800A721DC /* DemensApp4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemensApp4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750994DC2E3EBCFD00A721DC /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		750994DE2E3EBD0900A721DC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		750994E02E3EBD1700A721DC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		750994E22E3EBDC500A721DC /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		750994E62E3EC0BE00A721DC /* CallSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSession.swift; sourceTree = "<group>"; };
+		750994E82E3EC0E900A721DC /* CallKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitManager.swift; sourceTree = "<group>"; };
+		750994F02E3F354D00A721DC /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		750994F22E3F35CD00A721DC /* SpeechRecognitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionManager.swift; sourceTree = "<group>"; };
+		750994F42E3F414D00A721DC /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		750994F62E3F4BB700A721DC /* IncomingCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallView.swift; sourceTree = "<group>"; };
+		750994FA2E3F76F000A721DC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		752FDD202E52629600E35775 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		752FDD222E5262C000E35775 /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
+		757A9F132E3FAE4C00E207CE /* CallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewModel.swift; sourceTree = "<group>"; };
+		75BB797B2E40CC1900F8AB71 /* AgoraVideoCallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraVideoCallManager.swift; sourceTree = "<group>"; };
+		75BB797D2E40CC9200F8AB71 /* IntegratedCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratedCallView.swift; sourceTree = "<group>"; };
+		75BB79AA2E426A6700F8AB71 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		75BB79AC2E426BEA00F8AB71 /* VideoRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingView.swift; sourceTree = "<group>"; };
+		75BB79AE2E448ED000F8AB71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75BB79B22E44A6A200F8AB71 /* VideoCallSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallSimulator.swift; sourceTree = "<group>"; };
+		75BB79B42E44AAFD00F8AB71 /* IncomingVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingVideoCallView.swift; sourceTree = "<group>"; };
+		75BB79B62E47F52400F8AB71 /* DebugConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugConsoleView.swift; sourceTree = "<group>"; };
+		75C237062E4BAD8A00BECD21 /* iPadHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadHomeView.swift; sourceTree = "<group>"; };
+		75C237082E4BB1EA00BECD21 /* PhoneInterfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInterfaceView.swift; sourceTree = "<group>"; };
+		75C237182E4F071700BECD21 /* RealVideoRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealVideoRecordingManager.swift; sourceTree = "<group>"; };
+		75C2371A2E4F073F00BECD21 /* ContactsImportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsImportManager.swift; sourceTree = "<group>"; };
+		75C2371C2E4F1F6500BECD21 /* RealCameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealCameraManager.swift; sourceTree = "<group>"; };
+		75C237212E50B33B00BECD21 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		750994B32E3EBCD600A721DC /* DemensApp4 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DemensApp4;
+			sourceTree = "<group>";
+		};
+		750994C12E3EBCD800A721DC /* DemensApp4Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DemensApp4Tests;
+			sourceTree = "<group>";
+		};
+		750994CB2E3EBCD800A721DC /* DemensApp4UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DemensApp4UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		750994AE2E3EBCD600A721DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75BB79892E411EC000F8AB71 /* AudioBeauty in Frameworks */,
+				75BB798D2E411EC000F8AB71 /* ContentInspect in Frameworks */,
+				75BB79832E411EC000F8AB71 /* AIAECLL in Frameworks */,
+				75BB79972E411EC000F8AB71 /* RtcBasic in Frameworks */,
+				75BB79992E411EC000F8AB71 /* SpatialAudio in Frameworks */,
+				75BB79872E411EC000F8AB71 /* AINSLL in Frameworks */,
+				75BB79912E411EC000F8AB71 /* FaceDetection in Frameworks */,
+				75BB799F2E411EC000F8AB71 /* VideoAv1CodecEnc in Frameworks */,
+				75BB799D2E411EC000F8AB71 /* VideoAv1CodecDec in Frameworks */,
+				75BB79A12E411EC000F8AB71 /* VideoCodecDec in Frameworks */,
+				750994F12E3F354D00A721DC /* Speech.framework in Frameworks */,
+				750994DF2E3EBD0900A721DC /* AVFoundation.framework in Frameworks */,
+				75BB79A32E411EC000F8AB71 /* VideoCodecEnc in Frameworks */,
+				75BB799B2E411EC000F8AB71 /* VQA in Frameworks */,
+				75BB79812E411EC000F8AB71 /* AIAEC in Frameworks */,
+				75BB79A52E411EC000F8AB71 /* VirtualBackground in Frameworks */,
+				75BB79852E411EC000F8AB71 /* AINS in Frameworks */,
+				750994DD2E3EBCFD00A721DC /* CallKit.framework in Frameworks */,
+				75BB798B2E411EC000F8AB71 /* ClearVision in Frameworks */,
+				75BB79952E411EC000F8AB71 /* ReplayKit in Frameworks */,
+				75BB79932E411EC000F8AB71 /* LipSync in Frameworks */,
+				75BB798F2E411EC000F8AB71 /* FaceCapture in Frameworks */,
+				750994E12E3EBD1700A721DC /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750994BB2E3EBCD800A721DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750994C52E3EBCD800A721DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		750994A82E3EBCD600A721DC = {
+			isa = PBXGroup;
+			children = (
+				752FDD222E5262C000E35775 /* SyncStatusView.swift */,
+				752FDD202E52629600E35775 /* CloudKitManager.swift */,
+				75C237212E50B33B00BECD21 /* ContactManager.swift */,
+				75C2371C2E4F1F6500BECD21 /* RealCameraManager.swift */,
+				75C2371A2E4F073F00BECD21 /* ContactsImportManager.swift */,
+				75C237182E4F071700BECD21 /* RealVideoRecordingManager.swift */,
+				75C237082E4BB1EA00BECD21 /* PhoneInterfaceView.swift */,
+				75C237062E4BAD8A00BECD21 /* iPadHomeView.swift */,
+				75BB79B62E47F52400F8AB71 /* DebugConsoleView.swift */,
+				75BB79B42E44AAFD00F8AB71 /* IncomingVideoCallView.swift */,
+				75BB79B22E44A6A200F8AB71 /* VideoCallSimulator.swift */,
+				75BB79AE2E448ED000F8AB71 /* AppDelegate.swift */,
+				75BB79AC2E426BEA00F8AB71 /* VideoRecordingView.swift */,
+				75BB79AA2E426A6700F8AB71 /* AddContactView.swift */,
+				75BB797D2E40CC9200F8AB71 /* IntegratedCallView.swift */,
+				75BB797B2E40CC1900F8AB71 /* AgoraVideoCallManager.swift */,
+				757A9F132E3FAE4C00E207CE /* CallViewModel.swift */,
+				750994FA2E3F76F000A721DC /* SettingsView.swift */,
+				750994F62E3F4BB700A721DC /* IncomingCallView.swift */,
+				750994F42E3F414D00A721DC /* VideoManager.swift */,
+				750994F22E3F35CD00A721DC /* SpeechRecognitionManager.swift */,
+				750994E82E3EC0E900A721DC /* CallKitManager.swift */,
+				750994E62E3EC0BE00A721DC /* CallSession.swift */,
+				750994E22E3EBDC500A721DC /* Contact.swift */,
+				750994B32E3EBCD600A721DC /* DemensApp4 */,
+				750994C12E3EBCD800A721DC /* DemensApp4Tests */,
+				750994CB2E3EBCD800A721DC /* DemensApp4UITests */,
+				750994DB2E3EBCFD00A721DC /* Frameworks */,
+				750994B22E3EBCD600A721DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		750994B22E3EBCD600A721DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				750994B12E3EBCD600A721DC /* DemensApp4.app */,
+				750994BE2E3EBCD800A721DC /* DemensApp4Tests.xctest */,
+				750994C82E3EBCD800A721DC /* DemensApp4UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		750994DB2E3EBCFD00A721DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				750994F02E3F354D00A721DC /* Speech.framework */,
+				750994E02E3EBD1700A721DC /* UserNotifications.framework */,
+				750994DE2E3EBD0900A721DC /* AVFoundation.framework */,
+				750994DC2E3EBCFD00A721DC /* CallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		750994B02E3EBCD600A721DC /* DemensApp4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750994D22E3EBCD800A721DC /* Build configuration list for PBXNativeTarget "DemensApp4" */;
+			buildPhases = (
+				750994AD2E3EBCD600A721DC /* Sources */,
+				750994AE2E3EBCD600A721DC /* Frameworks */,
+				750994AF2E3EBCD600A721DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				750994B32E3EBCD600A721DC /* DemensApp4 */,
+			);
+			name = DemensApp4;
+			packageProductDependencies = (
+				75BB79802E411EC000F8AB71 /* AIAEC */,
+				75BB79822E411EC000F8AB71 /* AIAECLL */,
+				75BB79842E411EC000F8AB71 /* AINS */,
+				75BB79862E411EC000F8AB71 /* AINSLL */,
+				75BB79882E411EC000F8AB71 /* AudioBeauty */,
+				75BB798A2E411EC000F8AB71 /* ClearVision */,
+				75BB798C2E411EC000F8AB71 /* ContentInspect */,
+				75BB798E2E411EC000F8AB71 /* FaceCapture */,
+				75BB79902E411EC000F8AB71 /* FaceDetection */,
+				75BB79922E411EC000F8AB71 /* LipSync */,
+				75BB79942E411EC000F8AB71 /* ReplayKit */,
+				75BB79962E411EC000F8AB71 /* RtcBasic */,
+				75BB79982E411EC000F8AB71 /* SpatialAudio */,
+				75BB799A2E411EC000F8AB71 /* VQA */,
+				75BB799C2E411EC000F8AB71 /* VideoAv1CodecDec */,
+				75BB799E2E411EC000F8AB71 /* VideoAv1CodecEnc */,
+				75BB79A02E411EC000F8AB71 /* VideoCodecDec */,
+				75BB79A22E411EC000F8AB71 /* VideoCodecEnc */,
+				75BB79A42E411EC000F8AB71 /* VirtualBackground */,
+			);
+			productName = DemensApp4;
+			productReference = 750994B12E3EBCD600A721DC /* DemensApp4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		750994BD2E3EBCD800A721DC /* DemensApp4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750994D52E3EBCD800A721DC /* Build configuration list for PBXNativeTarget "DemensApp4Tests" */;
+			buildPhases = (
+				750994BA2E3EBCD800A721DC /* Sources */,
+				750994BB2E3EBCD800A721DC /* Frameworks */,
+				750994BC2E3EBCD800A721DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				750994C02E3EBCD800A721DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				750994C12E3EBCD800A721DC /* DemensApp4Tests */,
+			);
+			name = DemensApp4Tests;
+			packageProductDependencies = (
+			);
+			productName = DemensApp4Tests;
+			productReference = 750994BE2E3EBCD800A721DC /* DemensApp4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		750994C72E3EBCD800A721DC /* DemensApp4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750994D82E3EBCD800A721DC /* Build configuration list for PBXNativeTarget "DemensApp4UITests" */;
+			buildPhases = (
+				750994C42E3EBCD800A721DC /* Sources */,
+				750994C52E3EBCD800A721DC /* Frameworks */,
+				750994C62E3EBCD800A721DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				750994CA2E3EBCD800A721DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				750994CB2E3EBCD800A721DC /* DemensApp4UITests */,
+			);
+			name = DemensApp4UITests;
+			packageProductDependencies = (
+			);
+			productName = DemensApp4UITests;
+			productReference = 750994C82E3EBCD800A721DC /* DemensApp4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		750994A92E3EBCD600A721DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					750994B02E3EBCD600A721DC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					750994BD2E3EBCD800A721DC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 750994B02E3EBCD600A721DC;
+					};
+					750994C72E3EBCD800A721DC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 750994B02E3EBCD600A721DC;
+					};
+				};
+			};
+			buildConfigurationList = 750994AC2E3EBCD600A721DC /* Build configuration list for PBXProject "DemensApp4" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 750994A82E3EBCD600A721DC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 750994B22E3EBCD600A721DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				750994B02E3EBCD600A721DC /* DemensApp4 */,
+				750994BD2E3EBCD800A721DC /* DemensApp4Tests */,
+				750994C72E3EBCD800A721DC /* DemensApp4UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		750994AF2E3EBCD600A721DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750994BC2E3EBCD800A721DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750994C62E3EBCD800A721DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		750994AD2E3EBCD600A721DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750994E32E3EBDC500A721DC /* Contact.swift in Sources */,
+				750994E92E3EC0E900A721DC /* CallKitManager.swift in Sources */,
+				750994E72E3EC0BE00A721DC /* CallSession.swift in Sources */,
+				75BB79B52E44AAFD00F8AB71 /* IncomingVideoCallView.swift in Sources */,
+				75BB79B72E47F52400F8AB71 /* DebugConsoleView.swift in Sources */,
+				750994F72E3F4BB700A721DC /* IncomingCallView.swift in Sources */,
+				75BB79AB2E426A6700F8AB71 /* AddContactView.swift in Sources */,
+				75C2371B2E4F073F00BECD21 /* ContactsImportManager.swift in Sources */,
+				750994F52E3F414D00A721DC /* VideoManager.swift in Sources */,
+				75C2371D2E4F1F6500BECD21 /* RealCameraManager.swift in Sources */,
+				75C237192E4F071700BECD21 /* RealVideoRecordingManager.swift in Sources */,
+				750994FB2E3F76F000A721DC /* SettingsView.swift in Sources */,
+				75BB79AF2E448ED000F8AB71 /* AppDelegate.swift in Sources */,
+				750994F32E3F35CD00A721DC /* SpeechRecognitionManager.swift in Sources */,
+				752FDD212E52629600E35775 /* CloudKitManager.swift in Sources */,
+				75C237092E4BB1EA00BECD21 /* PhoneInterfaceView.swift in Sources */,
+				75BB79B32E44A6A200F8AB71 /* VideoCallSimulator.swift in Sources */,
+				75C237072E4BAD8A00BECD21 /* iPadHomeView.swift in Sources */,
+				75BB79AD2E426BEA00F8AB71 /* VideoRecordingView.swift in Sources */,
+				752FDD232E5262C000E35775 /* SyncStatusView.swift in Sources */,
+				75BB797C2E40CC1900F8AB71 /* AgoraVideoCallManager.swift in Sources */,
+				75C237222E50B33B00BECD21 /* ContactManager.swift in Sources */,
+				757A9F142E3FAE4C00E207CE /* CallViewModel.swift in Sources */,
+				75BB797E2E40CC9200F8AB71 /* IntegratedCallView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750994BA2E3EBCD800A721DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750994C42E3EBCD800A721DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		750994C02E3EBCD800A721DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 750994B02E3EBCD600A721DC /* DemensApp4 */;
+			targetProxy = 750994BF2E3EBCD800A721DC /* PBXContainerItemProxy */;
+		};
+		750994CA2E3EBCD800A721DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 750994B02E3EBCD600A721DC /* DemensApp4 */;
+			targetProxy = 750994C92E3EBCD800A721DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		750994D02E3EBCD800A721DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		750994D12E3EBCD800A721DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		750994D32E3EBCD800A721DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemensApp4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemensApp4/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Denne appen trenger tilgang til kamera for å ta opp instruksjonsvideoer for kontakter.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "DemensApp trenger tilgang til kontakter for å importere navn og telefonnumre";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Denne appen trenger tilgang til mikrofon for å ta opp instruksjonsvideoer og for stemmegjenkjenning.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Denne appen trenger tilgang til foto-biblioteket for å velge instruksjonsvideoer.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Denne appen bruker stemmegjenkjenning for å automatisk ta telefonen når du begynner å snakke.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfbjarne.DemensApp4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		750994D42E3EBCD800A721DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemensApp4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemensApp4/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Denne appen trenger tilgang til kamera for å ta opp instruksjonsvideoer for kontakter.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "DemensApp trenger tilgang til kontakter for å importere navn og telefonnumre";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Denne appen trenger tilgang til mikrofon for å ta opp instruksjonsvideoer og for stemmegjenkjenning.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Denne appen trenger tilgang til foto-biblioteket for å velge instruksjonsvideoer.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Denne appen bruker stemmegjenkjenning for å automatisk ta telefonen når du begynner å snakke.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfbjarne.DemensApp4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		750994D62E3EBCD800A721DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfbjarne.DemensApp4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemensApp4.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DemensApp4";
+			};
+			name = Debug;
+		};
+		750994D72E3EBCD800A721DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfbjarne.DemensApp4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemensApp4.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DemensApp4";
+			};
+			name = Release;
+		};
+		750994D92E3EBCD800A721DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfbjarne.DemensApp4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemensApp4;
+			};
+			name = Debug;
+		};
+		750994DA2E3EBCD800A721DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UPVL9FL4N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfbjarne.DemensApp4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemensApp4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		750994AC2E3EBCD600A721DC /* Build configuration list for PBXProject "DemensApp4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750994D02E3EBCD800A721DC /* Debug */,
+				750994D12E3EBCD800A721DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750994D22E3EBCD800A721DC /* Build configuration list for PBXNativeTarget "DemensApp4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750994D32E3EBCD800A721DC /* Debug */,
+				750994D42E3EBCD800A721DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750994D52E3EBCD800A721DC /* Build configuration list for PBXNativeTarget "DemensApp4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750994D62E3EBCD800A721DC /* Debug */,
+				750994D72E3EBCD800A721DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750994D82E3EBCD800A721DC /* Build configuration list for PBXNativeTarget "DemensApp4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750994D92E3EBCD800A721DC /* Debug */,
+				750994DA2E3EBCD800A721DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75BB79802E411EC000F8AB71 /* AIAEC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AIAEC;
+		};
+		75BB79822E411EC000F8AB71 /* AIAECLL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AIAECLL;
+		};
+		75BB79842E411EC000F8AB71 /* AINS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AINS;
+		};
+		75BB79862E411EC000F8AB71 /* AINSLL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AINSLL;
+		};
+		75BB79882E411EC000F8AB71 /* AudioBeauty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AudioBeauty;
+		};
+		75BB798A2E411EC000F8AB71 /* ClearVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ClearVision;
+		};
+		75BB798C2E411EC000F8AB71 /* ContentInspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ContentInspect;
+		};
+		75BB798E2E411EC000F8AB71 /* FaceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = FaceCapture;
+		};
+		75BB79902E411EC000F8AB71 /* FaceDetection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = FaceDetection;
+		};
+		75BB79922E411EC000F8AB71 /* LipSync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = LipSync;
+		};
+		75BB79942E411EC000F8AB71 /* ReplayKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ReplayKit;
+		};
+		75BB79962E411EC000F8AB71 /* RtcBasic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = RtcBasic;
+		};
+		75BB79982E411EC000F8AB71 /* SpatialAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = SpatialAudio;
+		};
+		75BB799A2E411EC000F8AB71 /* VQA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VQA;
+		};
+		75BB799C2E411EC000F8AB71 /* VideoAv1CodecDec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VideoAv1CodecDec;
+		};
+		75BB799E2E411EC000F8AB71 /* VideoAv1CodecEnc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VideoAv1CodecEnc;
+		};
+		75BB79A02E411EC000F8AB71 /* VideoCodecDec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VideoCodecDec;
+		};
+		75BB79A22E411EC000F8AB71 /* VideoCodecEnc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VideoCodecEnc;
+		};
+		75BB79A42E411EC000F8AB71 /* VirtualBackground */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BB797F2E411EC000F8AB71 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VirtualBackground;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 750994A92E3EBCD600A721DC /* Project object */;
+}
